@@ -15,25 +15,3 @@ reactions: {
 "grass": { elem1: "dirt", elem2: "null" }
 }
 };
-
-if (!elements.cobblestone) {
-
-};
-}
-
-
-if (elements.magma) {
-
-
-elements.magma.reactions.stone = {
-elem1: ["stone", "basalt", "cobblestone"],
-chance: 0.05
-};
-
-
-if (elements.magma.reactions.water) {
-elements.magma.reactions.water.elem1 = ["stone", "basalt", "cobblestone"];
-}
-}
-
-});
