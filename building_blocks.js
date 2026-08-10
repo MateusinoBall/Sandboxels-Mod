@@ -15,7 +15,7 @@ hardness: 0.5,
 
 reactions: {
 "plasma": { elem1: "magma", elem2: "null" },
-"grass": { breakIntoIntoInto: "dirt", elem2: "runAfterLoadfterLoad" }
+"grass": { elem1: "dirt", elem2: "null" }
 };
 
 
