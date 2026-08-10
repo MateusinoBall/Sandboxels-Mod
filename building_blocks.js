@@ -8,10 +8,9 @@ color: ["#7a7a7a", "#6b6b6b", "#5c5c5c"],
 behavior: behaviors.POWDER,
 category: "land",
 breakInto: "gravel",
-state: "solid",
-stateHigh: "polished_stone",
-tempHigh: 250,
-hardness: 0.5,
+  hardness: 0.5,
+  stateHigh: "polished_stone",
+tempHigh: 200,
 
 reactions: {
 "plasma": { elem1: "magma", elem2: "null" },
@@ -19,6 +18,14 @@ reactions: {
 };
 
 elements.polished_stone = {
-  color: "#"
+  color: ["#ced5d6", "#a3ced4"],
+  behavior: behaviors.WALL,
+  category: "solids",
+  breakInto: "polished_stone_fragments",
+  hardness: 0.3,
+  conduct: 0.1,
+  state: "solid",
+  stateHigh: "lava",
+  tempHigh: 1300,
   
 }
