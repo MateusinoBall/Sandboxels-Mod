@@ -18,4 +18,7 @@ reactions: {
 "grass": { elem1: "dirt", elem2: "null" }
 };
 
-
+elements.polished_stone = {
+  color: "#"
+  
+}
