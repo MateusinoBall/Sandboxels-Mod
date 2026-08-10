@@ -8,10 +8,11 @@ breakInto: "gravel",
 state: "solid",
 stateHigh: "polished_stone",
 tempHigh: 250,
-hardness: 0.5
+hardness: 0.5,
 
 reactions: {
 "plasma": { elem1: "magma", elem2: "null" },
-"grass": { elem1: "dirt", elem2: "null" }
+"grass": { elem1: "dirt", elem2: "dirt" }
 }
-};
+
+
