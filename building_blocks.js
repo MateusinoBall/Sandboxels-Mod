@@ -1,7 +1,3 @@
-runAfterLoad(function() {
-  console.log("Thanks for using building_blocks.js! - Mateusino Ball")
-});
-
 elements.cobblestone = {
 color: ["#7a7a7a", "#6b6b6b", "#5c5c5c"],
 behavior: behaviors.POWDER,
@@ -9,7 +5,7 @@ category: "land",
 breakInto: "gravel",
   hardness: 0.5,
   state: "solid",
-  Mateusino: "polished_stone",
+  stateHigh: "polished_stone",
 tempHigh: 200,
 
 reactions: {
