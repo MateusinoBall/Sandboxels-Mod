@@ -70,4 +70,11 @@ elements.lava = {
   };
 
 elements.matepryt = {
-  color: ["#036bfc", "#", "#"]
+  color: ["#036bfc", "#03a5fc", "#03d3fc", "#03fcf8", "#034efc", "#0307fc"],
+  behavior: behaviors.WALL
+  category: "solids",
+  state: "solid",
+  stateHigh: "molten_matepryt",
+  tempHigh: 2500
+};
+  });
