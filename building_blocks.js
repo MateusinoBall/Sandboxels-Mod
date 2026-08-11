@@ -39,7 +39,7 @@ elements.polished_stone_fragments = {
   color: ["#ced5d6", "#616161"],
   behavior: behaviors.POWDER,
   category: "powders",
-  breakInto: ["stostone"carbon_dioxide"],
+  breakInto: ["stone", "carbon_dioxide"],
   hardness: 0.3,
   state: "solid",
   stateHigh: "lava",
@@ -64,7 +64,8 @@ elements.lava = {
   "aluminum": { elem1: "molten_aluminum", elem2: "null" },
   "wood": { elem1: "fire", elem2: "charcoal" },
   "bricks": { elem1: "molten_bricks", elem2: "carbon_dioxide" },
-  "molten_bricks": { elem1: "molten_matepryt", elem2: "null"}
+  "molten_bricks": { elem1: "molten_matepryt", elem2: "null" },
+  "water": { elem1: "cobblestone", elem2: "stone" }
   }
   };
 
@@ -80,3 +81,9 @@ elements.matepryt = {
 elements.molten_matepryt = {
   color: ["#036bfc", "#03d3fc", "#03fcf8"],
   behavior: behaviors.MOLTEN,
+  category: "states",
+  state: "liquid",
+  tempLow: 1000,
+  stateLow: "matepryt"
+    };
+});
