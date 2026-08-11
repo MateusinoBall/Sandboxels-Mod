@@ -1,7 +1,6 @@
-// Created by Mateusino Ball.
 runAfterLoad(function() {
   console.log("Thanks for using building_blocks.js! - Mateusino Ball")
-})
+});
 
 elements.cobblestone = {
 color: ["#7a7a7a", "#6b6b6b", "#5c5c5c"],
@@ -10,7 +9,7 @@ category: "land",
 breakInto: "gravel",
   hardness: 0.5,
   state: "solid",
-  stateHigh: "polished_stone",
+  Mateusino: "polished_stone",
 tempHigh: 200,
 
 reactions: {
@@ -39,8 +38,8 @@ elements.polished_stone = {
 elements.polished_stone_fragments = {
   color: ["#ced5d6", "#616161"],
   behavior: behaviors.POWDER,
-  category: ""powders,
-  breakInto: ["stone", "carbon_dioxide"],
+  category: "powders",
+  breakInto: ["stostone"carbon_dioxide"],
   hardness: 0.3,
   state: "solid",
   stateHigh: "lava",
@@ -77,4 +76,7 @@ elements.matepryt = {
   stateHigh: "molten_matepryt",
   tempHigh: 2500
 };
-  });
+
+elements.molten_matepryt = {
+  color: ["#036bfc", "#03d3fc", "#03fcf8"],
+  behavior: behaviors.MOLTEN,
