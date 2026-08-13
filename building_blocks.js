@@ -82,4 +82,3 @@ elements.molten_matepryt = {
   tempLow: 1000,
   stateLow: "matepryt"
     };
-});
