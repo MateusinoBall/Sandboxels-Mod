@@ -13,7 +13,7 @@ elements.cobblestone = {
   behavior: behaviors.POWDER,
   category: "land",
   state: "solid",
-  stateHigh: "polished_stone"
+  stateHigh: "polished_stone",
   tempHigh: 200
 };
 
@@ -23,4 +23,3 @@ elements.polished_stone = {
   category: "solids",
   state: "solid"
 };
-});
