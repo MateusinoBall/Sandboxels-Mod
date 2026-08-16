@@ -10,7 +10,10 @@ elements.dough.reactions = {
 
 elements.milk.reactions = {
   ...elements.milk.reactions,
-  "milk_cream": { elem1: "creamy_milk", elem2: "null" }
+  "milk_cream": { elem1: "creamy_milk", elem2: "null" },
+  "sugar": { elem1: "condensed_milk", elem2: "sweet_particles" },
+  "condensed_milk": { elem1: "sweetened_milk", elem2: "sugar" },
+  ""
 };
 
 elements.brigadeiro_dough = {
