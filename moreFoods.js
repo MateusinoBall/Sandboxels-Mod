@@ -13,7 +13,7 @@ elements.milk.reactions = {
   "milk_cream": { elem1: "creamy_milk", elem2: "null" },
   "sugar": { elem1: "condensed_milk", elem2: "sweet_particles" },
   "condensed_milk": { elem1: "sweetened_milk", elem2: "sugar" },
-  ""
+  "sugar_water": { elem1: "milk_cream", elem2: "null" }
 };
 
 elements.brigadeiro_dough = {
