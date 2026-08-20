@@ -17,4 +17,9 @@ elements.died_leafs = {
 
 
 if (elements.wood) {
-  elements.wood.reactions = 
+  elements.wood.reactions = elements.wood.reactions || {};
+  elements.wood.reactions.air = { "chance": 0.001, element2: "died_leafs" }
+
+if (elements.plant) {
+  elements.plant.reactions = elements.plant.reactions || {};
+  elements.plant.reactions.air = { "chance": 0.005, element2: "died_leafs" }
