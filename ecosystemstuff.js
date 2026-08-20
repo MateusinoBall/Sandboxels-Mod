@@ -51,7 +51,7 @@ elements.poisonous_sap = {
   color: "#a020f0",
   behavior: behaviors.STURDYPOWDER,
   category: "life",
-  state: "solid",
+  state: "liquid",
   stateHigh: "poison",
   tempHigh: 125,
   tempLow: -20,
@@ -62,3 +62,20 @@ elements.poisonous_sap = {
     "plant": { element1: "sugar" }
     }
   };
+
+elements.life_worm = {
+  color: "#d2b48c",
+  behavior: [
+    "XX|XX|XX|",
+    "M1 AND CRWL|XX|M2 AND CRWL",
+    "XX|XX|XX"
+    ],
+  category: "life",
+  state: "solid",
+  stateHigh: "meat",
+  tempHigh: 100,
+  tempLow: -5,
+  stateLow: "frozen_meat",
+
+  reactions: {
+    
