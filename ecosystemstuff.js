@@ -1,4 +1,4 @@
-elements.died_leafs = {
+elements.dead_leafs = {
   color: "#8b5a2b",
   behavior: behaviors.POWDER,
   category: "life",
@@ -6,7 +6,7 @@ elements.died_leafs = {
   state: "solid",
   stateHigh: "fire",
   tempHigh: 350,
-  desc: "died leafs waiting to be fertilized",
+  desc: "dead leafs waiting to be fertilized",
 
   reactions: {
     "decomposer_bacteria": { "chance": 0.01, element1: "mud", element2: "dirt" },
@@ -18,11 +18,11 @@ elements.died_leafs = {
 
 if (elements.wood) {
   elements.wood.reactions = elements.wood.reactions || {};
-  elements.wood.reactions.air = { "chance": 0.001, element2: "died_leafs" };
+  elements.wood.reactions.air = { "chance": 0.001, element2: "dead_leafs" };
     }
 if (elements.plant) {
   elements.plant.reactions = elements.plant.reactions || {};
-  elements.plant.reactions.air = { "chance": 0.005, element2: "died_leafs" };
+  elements.plant.reactions.air = { "chance": 0.005, element2: "dead_leafs" };
 }
 
 elements.decomposer_bacteria = {
@@ -39,7 +39,7 @@ elements.decomposer_bacteria = {
 
   reactions: {
     "acid": { element1: "radiation", element2: null },
-    "died_leafs": { "chance": 0.01, element1: "mud", element2: "dirt" },
+    "dead_leafs": { "chance": 0.01, element1: "mud", element2: "dirt" },
     "poisonous_sap": { "chance": 0.5, element1: "rotten_meat", element2: "poison" },
     "rotten_meat": { element1: "mud", element2: null },
     "poison": { "chance": 0.001, element1: "flower_seed", element2: null },
@@ -78,4 +78,6 @@ elements.life_worm = {
   stateLow: "frozen_meat",
 
   reactions: {
-    
+    "acid": { element1: "radiation", "chance": 0.01, element2: "ant" },
+    "dirt": { "chance": 0.9, element1: "super_fertilizer", "chance": 0.1, element2: "mud" },
+    "dead_leafs: "
