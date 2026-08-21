@@ -136,3 +136,10 @@ elements.plasma_sakura_sapling = {
     "mud": { "chance": 0.6, element1: "plasma_sakura_branch" }
       }
     };
+
+elements.plasma_sakura_branch = {
+  color: "#2f4f4f",
+  behavior: [
+  ||,
+  ||,
+  ||
