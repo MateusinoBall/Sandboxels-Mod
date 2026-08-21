@@ -80,4 +80,59 @@ elements.life_worm = {
   reactions: {
     "acid": { element1: "radiation", "chance": 0.01, element2: "ant" },
     "dirt": { "chance": 0.9, element1: "super_fertilizer", "chance": 0.1, element2: "mud" },
-    "dead_leafs: "
+    "dead_leafs": { "chance": 0.75, element1: "mud" },
+    "milk": { "chance": 0.01, element1: "life_worm" },
+    "caramel": { "chance": 0.02, element1: "life_worm"},
+    "poisonous_sap": { element1: "autumn_sapling", element2: null }
+    }
+};
+
+elements.super_fertilizer = {
+  color: "#4a3b32",
+  behavior: behaviors.POWDER,
+  category: "life",
+  breakInto: ["dirt", "mud"],
+  density: 1.4,
+  state: "solid",
+  stateHigh: "dirt",
+  tempHigh: 300,
+
+  reactions: {
+    "plasma_sakura_sapling": { "chance": 0.9, element1: "plasma_sakura_branch" },
+    "willow_of_the_souls_sapling": { "chance": 0.9, element1: "willow_of_the_souls_branch" },
+    "autumn_sapling": { "chance": 0.9, element1: "autumn_branch" }
+      }
+  };
+
+elements.leech = {
+  color: "#4a0000",
+  behavior: behaviors.FLUID,
+  category: "life",
+  breakInto: "blood",
+  density: 1.3,
+  state: "solid",
+  stateHigh: "blood",
+  tempHigh: 150,
+
+  reactions: {
+    "life_worm": { element1: "blood" },
+    "blood": { "chance": 0.05, element1: "leech" },
+    "body": { element1: "blood" }
+  }
+      };
+
+elements.plasma_sakura_sapling = {
+  color: "#ff69b4",
+  behavior: behaviors.POWDER,
+  category: "life",
+  state: "solid",
+  stateHigh: "ash",
+  tempHigh: 400,
+
+  reactions: {
+    "super_fertilizer": { "chance": 0.9, element1: "plasma_sakura_branch"},
+    "grass": { "chance": 0.5, element1: "plasma_sakura_branch" },
+    "dirt": { "chance": 0.5, element1: "plasma_sakura_branch" },
+    "mud": { "chance": 0.6, element1: "plasma_sakura_branch" }
+      }
+    };
