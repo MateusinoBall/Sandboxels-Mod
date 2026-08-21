@@ -140,6 +140,7 @@ elements.plasma_sakura_sapling = {
 elements.plasma_sakura_branch = {
   color: "#2f4f4f",
   behavior: [
-  ||,
-  ||,
-  ||
+  CRWL:plasma_leafs%10|FX:|,
+  XX|XX|,
+  XX|XX|XX
+    ],
