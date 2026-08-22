@@ -145,3 +145,7 @@ elements.plasma_sakura_branch = {
   CRWL:roots%5|FX:fiber%3|CRWL:roots%5
     ],
   category: "life",
+  state: "solid",
+  stateHigh: ["charcoal", "ember", "ash"],
+  tempHigh: 400,
+  
