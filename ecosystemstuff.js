@@ -144,3 +144,4 @@ elements.plasma_sakura_branch = {
   XX|XX|XX,
   CRWL:roots%5|FX:fiber%3|CRWL:roots%5
     ],
+  category: "life",
